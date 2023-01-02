@@ -1,0 +1,12 @@
+.idea/*
+automated-view-ddl-creation.iml
+Input/1._ADSO_V3.5.csv
+Input/1._ADSO_V3.3.csv
+Input/master_v3.5.csv
+Input/text_v3.5.csv
+Input/View_Report001.csv
+Output_DDL/1._ADSO_V3.5.sql
+Output_DDL/1._ADSO_V3.4.sql
+Output_DDL/master_v3.5.sql
+Output_DDL/text_v3.5.sql
+Output_DDL/View_Report001.sql

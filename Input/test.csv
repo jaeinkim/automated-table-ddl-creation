@@ -1,0 +1,71 @@
+﻿TABNAME,TABNAME_Description,FIELDNAME,Description,PARTITION,KEYFLAG,DATATYPE,BQ_TYPE,LENG,DECIMALS
+ZCA_AD001,[CA] 사용자별 권한,BNAME,사용자 마스터 레코드의 사용자 이름,,X,CHAR,STRING,12,0
+ZCA_AD001,[CA] 사용자별 권한,ZBIZTPCD,업태,,X,CHAR,STRING,4,0
+ZCA_AD001,[CA] 사용자별 권한,ZMCH_L2,중분류,,X,CHAR,STRING,18,0
+ZCA_AD001,[CA] 사용자별 권한,RECORDMODE,RECORDMODE,,,CHAR,STRING,1,0
+ZCA_AD001,[CA] 사용자별 권한,ZBIZTPNM,코드설명,,,CHAR,STRING,80,0
+ZCA_AD001,[CA] 사용자별 권한,ZMCH_L2_NM,중분류명,,,CHAR,STRING,40,0
+ZCA_AD001,[CA] 사용자별 권한,ZMCH_L1,대분류,,,CHAR,STRING,18,0
+ZCA_AD001,[CA] 사용자별 권한,ZMCH_L1_NM,대분류명,,,CHAR,STRING,40,0
+ZCA_AD001,[CA] 사용자별 권한,ZTEAMCD,팀코드,,,CHAR,STRING,10,0
+ZCA_AD001,[CA] 사용자별 권한,ZTEAMNM,팀명,,,CHAR,STRING,40,0
+ZCA_AD001,[CA] 사용자별 권한,ZDICD,담당코드,,,CHAR,STRING,10,0
+ZCA_AD001,[CA] 사용자별 권한,ZDINM,담당명,,,CHAR,STRING,40,0
+ZCA_AD001,[CA] 사용자별 권한,ZHQCD,본부코드,,,CHAR,STRING,10,0
+ZCA_AD001,[CA] 사용자별 권한,ZHQNM,본부명,,,CHAR,STRING,40,0
+ZCA_AD001,[CA] 사용자별 권한,PUR_FLG,발주 가능 여부,,,CHAR,STRING,1,0
+ZCA_AD001,[CA] 사용자별 권한,LOEVM,삭제 지시자,,,CHAR,STRING,1,0
+ZCA_AD001,[CA] 사용자별 권한,ZCRNAME,생성인,,,CHAR,STRING,12,0
+ZCA_AD001,[CA] 사용자별 권한,ZCRSDATE,생성일자,,,DATS,DATE,8,0
+ZCA_AD001,[CA] 사용자별 권한,ZCRSTIME,생성시간,,,TIMS,TIMESTAMP,6,0
+ZCA_AD001,[CA] 사용자별 권한,ZCRLDATE,생성일자(로컬),,,DATS,DATE,8,0
+ZCA_AD001,[CA] 사용자별 권한,ZCRLTIME,생성시간(로컬),,,TIMS,TIMESTAMP,6,0
+ZCA_AD001,[CA] 사용자별 권한,ZUDNAME,변경인,,,CHAR,STRING,12,0
+ZCA_AD001,[CA] 사용자별 권한,ZUDSDATE,변경일자,,,DATS,DATE,8,0
+ZCA_AD001,[CA] 사용자별 권한,ZUDSTIME,변경시간,,,TIMS,TIMESTAMP,6,0
+ZCA_AD001,[CA] 사용자별 권한,ZUDLDATE,변경일자(로컬),,,DATS,DATE,8,0
+ZCA_AD001,[CA] 사용자별 권한,ZUDLTIME,변경시간(로컬),,,TIMS,TIMESTAMP,6,0
+ZCA_AD001,[CA] 사용자별 권한,ZONLO,ABAP System Field: Time Zone of Current User,,,CHAR,STRING,6,0
+ZCA_AD001,[CA] 사용자별 권한,LASTCHANGEDAT,LASTCHANGEDAT,,,DEC,FLOAT,15,0
+ZCA_AD001,[CA] 사용자별 권한,ODQ_CHANGEMODE,Change Mode for a Data Record in the Delta,,,CHAR,STRING,1,0
+ZCA_AD001,[CA] 사용자별 권한,ODQ_ENTITYCNTR,Number of Data Units (Data Records for Example),,,DEC,FLOAT,19,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",MANDT,클라이언트,,X,CHAR,STRING,3,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",KOKRS,관리회계 영역,,X,CHAR,STRING,4,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",BUKRS,회사 코드,,X,CHAR,STRING,4,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZPRCTR,손익센터,,X,CHAR,STRING,10,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZPMCHLV,대분류,,X,CHAR,STRING,18,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZMCH_L2,중분류,,X,CHAR,STRING,18,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPYM,YYYYMM,X,X,CHAR,STRING,6,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",RECORDMODE,RECORDMODE,,,CHAR,STRING,1,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",WAERS,통화,,,CUKY,STRING,5,0
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD01,매출실적 1일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD02,매출실적 2일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD03,매출실적 3일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD04,매출실적 4일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD05,매출실적 5일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD06,매출실적 6일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD07,매출실적 7일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD08,매출실적 8일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD09,매출실적 9일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD10,매출실적 10일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD11,매출실적 11일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD12,매출실적 12일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD13,매출실적 13일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD14,매출실적 14일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD15,매출실적 15일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD16,매출실적 16일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD17,매출실적 17일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD18,매출실적 18일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD19,매출실적 19일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD20,매출실적 20일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD21,매출실적 21일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD22,매출실적 22일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD23,매출실적 23일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD24,매출실적 24일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD25,매출실적 25일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD26,매출실적 26일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD27,매출실적 27일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD28,매출실적 28일,,,CURR,FLOAT,23,3
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD29,매출실적 29일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD30,매출실적 30일,,,CURR,FLOAT,23,2
+ZCO_AD001,"[BP] 매출/이익실적(대/중,손익센터,일별-매출계획 Outbound I/F)",ZBPSALESD31,매출실적 31일,,,CURR,FLOAT,23,2
