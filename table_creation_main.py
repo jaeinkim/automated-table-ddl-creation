@@ -100,9 +100,11 @@ def remove_legacy():
 ###Main Function
 ####################################################################################################################################################
 if(__name__=='__main__'):
-    input_filename = '1._ADSO_V3.5.csv'.strip().replace('.csv', '').replace('CSV', '')
+    # input_filename = '1._ADSO_V3.5.csv'.strip().replace('.csv', '').replace('CSV', '')
     # input_filename = 'master_v3.5.csv'.strip().replace('.csv', '').replace('CSV', '')
     # input_filename = 'text_v3.5.csv'.strip().replace('.csv', '').replace('CSV', '')
+
+    input_filename = 'test.csv'.strip().replace('.csv', '').replace('CSV', '')
 
 
     input_table = pd.read_csv(fr"Input/{input_filename}.csv",encoding='utf8', sep=',', header=None, skiprows=0, na_values=' ', error_bad_lines=False)
