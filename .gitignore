@@ -5,6 +5,8 @@ Input/1._ADSO_V3.3.csv
 Input/master_v3.5.csv
 Input/text_v3.5.csv
 Input/View_Report001.csv
+Input/*.csv
+Output_DDL/*.csv
 Output_DDL/1._ADSO_V3.5.sql
 Output_DDL/1._ADSO_V3.4.sql
 Output_DDL/master_v3.5.sql
