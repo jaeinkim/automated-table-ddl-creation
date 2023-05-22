@@ -19,7 +19,7 @@ def create_tables(input_table):
         Target_Table_Name=scan['TABNAME'].iloc[0] # iloc는 행번호로 선택 가능
         # Source_Dataset_Name=scan['Source_Dataset_Name'].iloc[0]
         #str(Source_Dataset_Name).strip(" ")
-        Target_Columns=[s.strip() for s in scan['FIELDNAME'].tolist()]
+        Target_Columns=[s.strip().replace('/BIC/', '') for s in scan['FIELDNAME'].tolist()]
         Target_Columns_Desc=[str(s).strip() for s in scan['Description'.upper()].tolist()]
         # Target_Columns_Cluster_Key=[k for k, v in dict(zip(Target_Columns, scan['KEYFLAG'].tolist())).items() if not pd.isna(v)][0:4]
         Target_Columns_Cluster_Key=[k for k, v in dict(zip(Target_Columns, scan['KEYFLAG'].tolist())).items() if not (pd.isna(v) or v.strip() == '')][0:4]
@@ -109,7 +109,8 @@ if(__name__=='__main__'):
     # input_filename = 'add_mig.csv'.strip().replace('.csv', '').replace('CSV', '')
     # input_filename = '1.ADSO_리스트_V.4.2_변경분반영.csv'.strip().replace('.csv', '').replace('CSV', '')
     # input_filename = 'ZPR_AD005-006.csv'.strip().replace('.csv', '').replace('CSV', '')
-    input_filename = 'ZMM_AD025, ZMM_AD026.csv'.strip().replace('.csv', '').replace('CSV', '')
+    # input_filename = 'ZMM_AD025, ZMM_AD026.csv'.strip().replace('.csv', '').replace('CSV', '')
+    input_filename = 'ZMM_AD707.csv'.strip().replace('.csv', '').replace('CSV', '')
 
     # input_filename = 'test.csv'.strip().replace('.csv', '').replace('CSV', '')
 
