@@ -6,6 +6,8 @@ import os
 import shutil
 import time
 from pathlib import Path
+
+#type_hm ={'DATS': 'DATE', 'CHAR': 'STRING', 'NUMC': 'NUMERIC', 'DEC': 'FLOAT', 'INT4': 'INTEGER', 'QUAN': 'FLOAT', 'CUKY': 'STRING', 'UNIT': 'STRING', 'CURR': 'FLOAT', 'INT8': 'INTEGER', 'RAW': 'BYTES', 'TIMS': 'TIMESTAMP', 'FLTP': 'FLOAT', 'LANG': 'STRING', 'INT2': 'INTEGER'}
 ####################################################################################################################################################
 ###Function for Creation of the Tables
 ####################################################################################################################################################
@@ -17,19 +19,18 @@ def create_tables(input_table):
         Target_Table_Name=scan['TABNAME'].iloc[0] # iloc는 행번호로 선택 가능
         # Source_Dataset_Name=scan['Source_Dataset_Name'].iloc[0]
         #str(Source_Dataset_Name).strip(" ")
-        Target_Columns=[s.strip() for s in scan['FIELDNAME'].tolist()]
-        Target_Columns_Desc=[s.strip() for s in scan['Description'].tolist()]
-        # Target_Columns_Cluster_Key=[k for k, v in dict(zip(Target_Columns, scan['KEYFLAG'].tolist())).items() if not pd.isna(v)][0:4]
-        Target_Columns_Cluster_Key=[k for k, v in dict(zip(Target_Columns, scan['KEYFLAG'].tolist())).items() if not (pd.isna(v) or v.strip() == '')][0:4]
+        Target_Columns=scan['FIELDNAME'].tolist()
+        Target_Columns_Desc=scan['Description'].tolist()
+        Target_Columns_Cluster_Key=[k for k, v in dict(zip(Target_Columns, scan['KEYFLAG'].tolist())).items() if not pd.isna(v)][0:4]
 
-        Target_Columns_Type=[s.strip() for s in scan['BQ_TYPE'].tolist()]
-        Source_Columns_Type=[s.strip() for s in scan['DATATYPE'].tolist()]
+        Target_Columns_Type=scan['BQ_TYPE'].tolist()
+        Source_Columns_Type=scan['DATATYPE'].tolist()
         if scan.get('PARTITION') is None:
             Target_Partition_Key = []
         else:
             Target_Partition_Key=[k for k, v in dict(zip(Target_Columns, scan['PARTITION'].tolist())).items() if not pd.isna(v) and v != '-']
         Target_Table_Name=scan['TABNAME'].iloc[0].strip()
-        Target_Table_Desc=scan['TABNAME_Description'].iloc[0].strip()
+        Target_Table_Desc=scan['TABNAME_Description'.upper()].iloc[0].strip()
 
         # Target_Project_Name=scan['Target_Project_Name'].iloc[0]
         Target_Project_Name='emart-datafabric'
@@ -105,9 +106,6 @@ if(__name__=='__main__'):
     # input_filename = '1._ADSO_V3.5.csv'.strip().replace('.csv', '').replace('CSV', '')
     # input_filename = 'master_v3.5.csv'.strip().replace('.csv', '').replace('CSV', '')
     # input_filename = 'text_v3.5.csv'.strip().replace('.csv', '').replace('CSV', '')
-    # input_filename = 'add_mig.csv'.strip().replace('.csv', '').replace('CSV', '')
-    # input_filename = '1.ADSO_리스트_V.4.2_변경분반영.csv'.strip().replace('.csv', '').replace('CSV', '')
-    input_filename = 'ZPR_AD005-006.csv'.strip().replace('.csv', '').replace('CSV', '')
 
     # input_filename = 'test.csv'.strip().replace('.csv', '').replace('CSV', '')
 
